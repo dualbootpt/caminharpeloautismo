@@ -11,8 +11,10 @@
 	<link rel="canonical" href="http://www.caminharpeloautismo.com" />
 	<link rel="icon" href="iconcaminharpeloautismo.jpg" sizes="32x32">
 	<link rel="shortcut icon" href="caminharpeloautismo.ico" type="image/x-icon"/>
-	<link rel="alternate" type="text/html" title="Inscricao Caminhada pelo Autismo"/>
 	<link rel="stylesheet" type="text/css" media="all" href="caminhadapeloautismo.css"/>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>
+	<script type="text/javascript" src="utils.js"></script>
 </head>
 <body>
 <div class="warpper">
@@ -28,14 +30,17 @@
 	</p>
 	</div>
 	<div class="inscricao">
-	  <form class="formulario" name="Inscricao" action="" method="post">
+	  <form class="formulario" name="Inscricao" action="inscrever.caminhadapeloautismo.php"
+	   method="post" onsubmit="return validaForm()">
 	  <div>Nome:<input class="text-input" type="text" name="nome"/></div>
 	  <div>Telef. :<input class="text-input" type="text" name="telef"/></div>
 	  <div>Email :<input class="text-input" type="text" name="email"/></div>
-	  <input class="button" type="submit" value="inscrever 5€"/>
+	  <input class="button" type="submit" value="Confirmar Inscrição 5€"/>
 	  <form>
 	</div>
-	<div class="contacto bloco">
+	<div id="mensagem">
+	</div>
+	<div class="contacto">
 	<p>
 	No âmbito do Dia Mundial de Consciencialização do Autismo junte-se a nós.
 	</p>
