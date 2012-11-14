@@ -24,13 +24,8 @@ function validaForm(){
 	var email = document.forms["Inscricao"]["email"];
 	var error = '';
 	
-	if(telef.value!=null && telef.value!=""){
-		if(isPhoneNumber(telef,"Telefone invalido")){
-			telef=telef;
-		}
-		else {
+	if(telef.value!=null && telef.value!="" && !isPhoneNumber(telef,"Telefone invalido")){
 			return false;
-		}
 	}
 	
 	if(notEmpty(nome, "Por favor preencha o nome")){

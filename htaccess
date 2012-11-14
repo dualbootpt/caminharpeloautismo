@@ -1,4 +1,4 @@
-DirectoryIndex caminhadapeloautismo.html index.php index.htm index.html
+DirectoryIndex Caminhadapeloautismo.html index.php index.htm index.html
 Options +All -Indexes
 
 RewriteEngine on
